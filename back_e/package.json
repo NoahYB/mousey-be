@@ -1,0 +1,26 @@
+{
+  "name": "back_e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mouseApp.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "matter-js": "^0.17.1",
+    "ws": "^7.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahYB/mousey.git"
+  },
+  "author": "Noah B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoahYB/mousey/issues"
+  },
+  "homepage": "https://github.com/NoahYB/mousey#readme"
+}
