@@ -7,6 +7,7 @@ wss.on('request', function(request) {
         var connection = request.accept('echo-protocol', request.origin);
         console.log((new Date()) + ' Connection accepted.');
 });
+
 wss.on('connection', function connection(ws) {
         ws.on('message', function incoming(message) { 
 
@@ -20,8 +21,8 @@ wss.on('connection', function connection(ws) {
                         };
                 }
 
-                if (data.action = "selectTeam") {
-                        connectedClients[data.id].team = teamSelection;
+                if (data.action === "selectTeam") {
+                        connectedClients[data.id].team = data.teamSelection;
                 }
 
                 wss.clients.forEach(client => {
